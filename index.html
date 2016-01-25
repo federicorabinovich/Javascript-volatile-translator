@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>JS Debugging Test</title>
+</head>
+<body>
+  <div style="float:left; width:75%;">
+    <h2>Word Translator</h2>
+    <p>
+      Welcome! This is a word translation tool. You provide the source words and the words that they
+      should be translated to, and the website does the rest! The translator already knows some words,
+      but it's important to remember that any words you teach it will be forgotten when the page is 
+      refreshed.
+    </p>
+    <span style="display:block;">
+      Source word: <input type="text" id="source-word" placeholder="party"/>
+      Translation word: <input type="text" id="translation-word" placeholder="fiesta">
+      <input type="button" id="learn-translate" value="Learn Translation!"/>
+    </span>
+    <h4>Translator</h4>
+    <p>
+      You can enter a sentence into the textbox below in order to use the known
+      translations to translate a sentence.
+    </p>
+    <textarea name="translate-box" id="translate-box" cols="50" rows="10" placeholder="Enter the sentence to translate here!"></textarea>
+    <p><span id="translation-result">And your translation will appear here!</span></p>
+  </div>
+  <div style="float:right; width:25%;">
+    <h2>Known Translations:</h2>
+    <p>
+      These are all the words I know!
+      They're in the form of "known word" -> "translation" in the list below.
+    </p>
+    <ul id="known-translations"></ul>
+  </div>
+ 
+</body>
+<script src="translator.js" type="application/javascript"></script>
+</html>
